@@ -30,6 +30,7 @@ api_url = API_URL
 
 auth = CoinbaseExchangeAuth(API_KEY, API_SECRETKEY, API_PASSPHRASE)
 
-r = requests.get(api_url + 'accounts/' + "d8e91252-87d7-48ea-ac5b-71c4cbffe070" + "/ledger" , auth=auth)
+# Access account holdings for all supported crytocurrencies
+r = requests.get(api_url + "accounts/" , auth=auth)
 
 print(json.dumps(r.json(), indent=2))
