@@ -3,3 +3,5 @@ Simple project to utilize the API from Coinbase to access both user data and mar
 
 First, create API keys through the Coinbase account settings. 
 The API key, secret key, and passphrase will go in the config.py file in the app directory. 
+
+DO NOT PUSH CONFIG FILE TO GITHUB. Add to the .gitignore file. 
